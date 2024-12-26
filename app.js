@@ -20,7 +20,10 @@ app.use(fileUpload());
 
 // Enable CORS
 app.use(cors({
-  origin:'https://dienthoaididong.vercel.app',
+  origin:[
+    'https://dienthoaididong.vercel.app', 
+    'http://localhost:5173'
+  ],
   methods:['POST','GET','DELETE','PUT'],
   credentials: true, // Cho phép gửi cookie kèm theo yêu cầu
 }
